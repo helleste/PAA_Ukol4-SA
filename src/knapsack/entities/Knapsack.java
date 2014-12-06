@@ -9,6 +9,17 @@ public class Knapsack {
 	private int price;
 	private BitSet itemsInBag = new BitSet();
 	
+	public Knapsack() {
+		
+	}
+	
+	public Knapsack(Knapsack knapsack) {
+		this.limit = knapsack.getLimit();
+		this.weight = knapsack.getWeight();
+		this.price = knapsack.getPrice();
+		this.itemsInBag = (BitSet) knapsack.getItemsInBag().clone();
+	}
+	
 	public BitSet getItemsInBag() {
 		return itemsInBag;
 	}

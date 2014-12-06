@@ -15,7 +15,7 @@ import knapsack.entities.Knapsack;
 
 public class FileLoader {
 
-	private String filename = "src/Files/inst/my_inst_C10000.inst.dat";
+	private String filename = "src/Files/inst/knap_37.inst.dat";
 	
 	// Parse a line of the given file and create Instance from the data
 	private Instance parseLine(String strLine) {
